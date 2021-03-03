@@ -128,4 +128,10 @@ closeBtn.addEventListener('click', () => document.getElementById('text-box').cla
 // Change voice
 voicesSelect.addEventListener('change', setVoice);
 
+// Read text button
+readBtn.addEventListener('click', () => {
+  setTextMessage(textarea.value);
+  speakText();
+});
+
 getVoices();
